@@ -1,0 +1,134 @@
+.aside-bar {
+  z-index: 3;
+  width: 200px !important;
+  height: 100vh;
+  background-color: #081028 !important;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+
+  &::-webkit-scrollbar {
+    width: 4px; /* Scrollbar width */
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #081028; /* Track background color */
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #34495e; /* Scroll thumb color */
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #3a5068; /* Hover state for the scroll thumb */
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+
+    img {
+      width: 100px;
+      height: auto;
+      filter: drop-shadow(2px 1px 0 rgb(255, 255, 255)) 
+              drop-shadow(-1px -1px 0 rgb(255, 255, 255)) 
+              drop-shadow(1px 1px 1px rgb(255, 255, 255));
+    }
+  }
+
+  nav {
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        margin-top: 5px;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #34495e;
+        }
+
+        a {
+          color: #fff;
+          font-size: 1rem;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          i {
+            font-size: 1.4rem !important;
+          }
+
+          &:hover {
+            text-decoration: none;
+          }
+
+          &.active {
+            background-color: #ffffff40;
+            border-radius: 10px;
+            width: 150px;
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  .logoutbutton-list {
+    margin-left: -20px;
+  }
+
+  .name-asiderbar {
+    visibility: hidden;
+  }
+
+  aside:hover {
+    .name-asiderbar {
+      visibility: visible;
+    }
+  }
+
+  aside ul li:first-of-type {
+    display: flex;
+    align-items: center;
+
+    figure {
+      width: 40px;
+      margin-right: 15px;
+      border-radius: 50%;
+      border: 3.5px solid #fff;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        margin-left: -10px;
+      }
+    }
+
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+
+  aside ul li:last-of-type a {
+    margin-top: 10px;
+    background-color: rgba(255, 0, 0, 0.737);
+  }
+}

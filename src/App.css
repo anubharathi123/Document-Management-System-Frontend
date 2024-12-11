@@ -1,0 +1,18 @@
+/* App.css */
+.app {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: #f4f4f4; /* Light background for the content area */
+}
+
+
+.content {
+  margin-left: 250px; /* Add left margin equal to the sidebar's width */
+  flex: 1;
+  padding: 20px;
+  background-color: #fff; /* White background for the content area */
+  overflow-y: auto; /* Allow content scrolling if needed */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
