@@ -1,0 +1,222 @@
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .tab {
+    background:#0b3041;
+  }
+  
+  .searchbtn {
+    width: 40px;
+    height: 40px;
+    font-size: 45px;
+    margin-right: 4px;
+    margin-bottom: 3px;
+    margin-top: 20px;
+    padding-bottom: 25px;
+    margin-left: 87%;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .searchbtn:hover {
+    background: #43bade;
+  }
+  
+  
+  .search_icon {
+    width: 40px;
+    height: 40px;
+    margin-left: -5px;
+    margin-top: -2px;
+    filter: invert(1)
+    
+  }
+  
+  .notificationbtn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: none;
+    margin-left: 7px;
+    margin-right:100%;
+    margin-top: 21px;
+    cursor: pointer;
+    position: absolute;
+  
+  }
+  
+  .notificationbtn:hover {
+    background: #43bade;
+  }
+  
+  .notification-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-left: -20px;
+    margin-top: -19px;
+    position: absolute;
+    filter: invert(1);
+  
+  }
+  
+  .profile-image {
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+    position:absolute;
+    filter: invert(1);
+  }
+  
+  .profilebtn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 60px;
+    margin-top: 21px;
+    position: absolute;
+  }
+  
+  .profilebtn:hover {
+    background: #43bade;
+  }
+  
+  .notification-dropdown {
+    background: white;
+    position: absolute;
+    width:50%;
+    padding-left: 20px;
+    padding-right: 60px;
+    padding-top:10px ;
+    height:65%;
+    margin-left: 26%;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+  }
+  
+  .close-button{
+    background: rgb(150, 143, 143);
+    border:none;
+    font-size: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-left: 700px;
+  }
+  
+  .close-button:hover {
+    background: rgb(75, 71, 71);
+    color: white;
+  }
+  
+  .search-bar-container {
+    position: absolute;
+    width: 270px;
+    margin-top: 1px;
+    margin-bottom: 16px;
+    background-color: #d4d0d0;
+    border: 1px solid #0a0a0a;
+    border-radius: 4px;
+    padding: 10px;
+    margin-left: 78%;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-left: -9px;
+  }
+  
+  .search-suggestions {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .suggestion-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .no-suggestions {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #aaa;
+    text-align: center;
+  }
+  
+  .profile-dropdown {
+    position: absolute;
+    top: 70px; /* Adjust based on profile button position */
+    right: 10px; /* Adjust to align with the button */
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 230px;
+  }
+  
+  .profile-dropdown p {
+    margin: 5px 0;
+  }
+  
+  .signout-button {
+    margin-top: 10px;
+    width: 100%;
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .signout-button:hover {
+    background: #c82333;
+  }
+  
