@@ -1,134 +1,140 @@
 .aside-bar {
   z-index: 3;
-  width: 200px !important;
+  width: 200px;
   height: 100vh;
-  background-color: #081028 !important;
+  background-color: #0b3041;
   color: #fff;
   position: fixed;
   top: 0;
   left: 0;
-  text-align: center;
   display: flex;
   flex-direction: column;
   padding: 20px;
-  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
 
-  &::-webkit-scrollbar {
-    width: 4px; /* Scrollbar width */
-  }
+nav {
+  overflow-y: auto; /* Enables scrolling for long lists */
+  height: calc(100vh - 50px); /* Adjust height to leave space for padding or other elements */
+}
 
-  &::-webkit-scrollbar-track {
-    background: #081028; /* Track background color */
-    border-radius: 4px;
-  }
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-  &::-webkit-scrollbar-thumb {
-    background-color: #34495e; /* Scroll thumb color */
-    border-radius: 4px;
-  }
+nav ul li {
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+  position: relative;
+}
 
-  &::-webkit-scrollbar-thumb:hover {
-    background-color: #3a5068; /* Hover state for the scroll thumb */
-  }
+nav ul li img {
+  width: 25px;
+  height: 25px;
+  transition: filter 0.3s ease-in-out;
+  color: #fff; 
+}
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  transition: color 0.3s, background-color 0.3s; /* Smooth transition for hover effect */
+}
 
-  .logo {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
+/* Hover effect */
+nav ul li:hover {
+  color: #5eb6d2; 
+  background-color: #34495e; /* Button background remains the same */
+}
 
-    img {
-      width: 100px;
-      height: auto;
-      filter: drop-shadow(2px 1px 0 rgb(255, 255, 255)) 
-              drop-shadow(-1px -1px 0 rgb(255, 255, 255)) 
-              drop-shadow(1px 1px 1px rgb(255, 255, 255));
-    }
-  }
+nav ul li:hover a {
+  color: #5eb6d2; /* Change text/icon color on hover */
+}
 
-  nav {
-    ul {
-      list-style: none;
-      padding: 0;
+nav ul li i {
+  font-size: 1.4rem;
+  transition: transform 0.3s ease-in-out;
+}
 
-      li {
-        display: flex;
-        align-items: center;
-        padding: 10px;
-        margin-top: 5px;
-        cursor: pointer;
-        border-radius: 10px;
-        transition: background-color 0.3s;
+/* Scale icon slightly when hovering */
+nav ul li:hover i {
+  transform: scale(1.2);
+}
 
-        &:hover {
-          background-color: #34495e;
-        }
+/* Active links */
+nav ul li a.active {
+  color: #ffffff; /* Active text color */
+  border-radius: 10px;
+}
 
-        a {
-          color: #fff;
-          font-size: 1rem;
-          text-decoration: none;
-          display: flex;
-          align-items: center;
-          gap: 10px;
+/* Dropdown Menu */
+.dropdown-menu {
+  padding: 10px 0;
+}
 
-          i {
-            font-size: 1.4rem !important;
-          }
+.dropdown-menu li {
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
 
-          &:hover {
-            text-decoration: none;
-          }
+.dropdown-menu li:hover {
+  background-color: #3a5068; /* Hover background for dropdown items */
+}
 
-          &.active {
-            background-color: #ffffff40;
-            border-radius: 10px;
-            width: 150px;
-            height: 40px;
-          }
-        }
-      }
-    }
-  }
+.dropdown-menu li a {
+  color: #fff;
+  width: 100%;
+  display: block;
+}
+.dropdown-icon {
+  margin-left: auto;
+  font-size: 0.8rem;
+  color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
 
-  .logoutbutton-list {
-    margin-left: -20px;
-  }
+.dropdown-icon.fa-chevron-up {
+  transform: rotate(180deg); /* Rotate icon for 'up' state */
+}
 
-  .name-asiderbar {
-    visibility: hidden;
-  }
 
-  aside:hover {
-    .name-asiderbar {
-      visibility: visible;
-    }
-  }
+/* Scrollbar styles */
+.dropdown-icon {
+  margin-left: auto;
+  font-size: 0.8rem;
+  color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
 
-  aside ul li:first-of-type {
-    display: flex;
-    align-items: center;
+.dropdown-icon.fa-chevron-up {
+  transform: rotate(180deg); /* Rotate icon for 'up' state */
+}
 
-    figure {
-      width: 40px;
-      margin-right: 15px;
-      border-radius: 50%;
-      border: 3.5px solid #fff;
-      overflow: hidden;
+nav::-webkit-scrollbar {
+  width: 8px;
+}
 
-      img {
-        width: 100%;
-        height: 100%;
-        margin-left: -10px;
-      }
-    }
+nav::-webkit-scrollbar-track {
+  background: #081028;
+  border-radius: 4px;
+}
 
-    h2 {
-      font-size: 1.2rem;
-    }
-  }
+nav::-webkit-scrollbar-thumb {
+  background-color: #34495e;
+  border-radius: 4px;
+}
 
-  aside ul li:last-of-type a {
-    margin-top: 10px;
-    background-color: rgba(255, 0, 0, 0.737);
-  }
+nav::-webkit-scrollbar-thumb:hover {
+  background-color: #3a5068;
 }
