@@ -1,0 +1,271 @@
+.verify-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin-top: 85px;
+  margin-left: 110px;
+  background-color: #fff;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-section {
+  margin-top: 20px;
+}
+
+.searchbtn {
+  margin-left: -51px;
+  margin-right: 80px;
+  width: 25px;
+  border: none;
+  background: #5fc3d7;
+  border-radius: 12px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.searchbtn:hover {
+  background: #0f3c46;
+  color: white;
+}
+
+.declaration-no {
+  font-size: 30px;
+}
+
+.declaration-number {
+  margin-left: 25%;
+  
+  margin-bottom: 20px;
+}
+
+.declaration-number label {
+  font-size: 18px;
+}
+
+.declaration-number input {
+  padding: 5px;
+  margin-right: 60px;
+}
+
+.calendarbtn {
+  margin-left: 15px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.approvebtn1 {
+  cursor: pointer;
+  border: none;
+  background: #5fc3d7;
+  border-radius: 4px;
+  width: 10%;
+  padding: 5px;
+
+}
+
+.approvebtn1:hover {
+  background: #0f3c46;
+  color: white;
+}
+
+.rejectbtn1 {
+  cursor: pointer;
+  border: none;
+  background: #5fc3d7;
+  border-radius: 4px;
+  width: 10%;
+  padding: 5px;
+}
+
+.rejectbtn1:hover {
+  background: #0f3c46;
+  color: white;
+}
+
+.show-doc-type-btn {
+  cursor: pointer;
+  border: none;
+  margin-left: 10px;
+  margin-top: -3px;
+  background: #f4f4f4;
+  border-radius: 4px;
+  width: 25px;
+  height: 25px;
+  position:absolute;
+}
+
+.show-doc-type-btn:hover {
+  background: #0f3c46;
+}
+
+.calendarbtn {
+  cursor: pointer;
+  border: none;
+  background: #f4f4f4;
+  margin-left: 15px;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.calendarbtn:hover {
+  background: #0f3c46;
+  color: white;
+}
+
+.dropdown-list {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  margin-top: 2px;
+  margin-left: 75px;
+  border-radius: 4px;
+  z-index: 1000;
+  padding: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.doc-list {
+  list-style-type:none;
+  padding: 0;
+  font-weight:lighter;
+}
+
+.allbtn {
+ padding: 5px; 
+  cursor: pointer;
+}
+
+.allbtn:hover {
+  background: rgb(77, 73, 73);
+  color: white;
+}
+
+.declaration {
+  padding: 5px; 
+  cursor: pointer;
+}
+
+.declaration:hover {
+  background: rgb(77, 73, 73);
+  color: white;
+}
+
+.invoice {
+  padding: 5px; 
+  cursor: pointer;
+}
+
+.invoice:hover {
+  background: rgb(77, 73, 73);
+  color: white;
+}
+
+.packing-list {
+  padding: 5px; 
+  cursor: pointer;
+}
+
+.packing-list:hover {
+  background: rgb(77, 73, 73);
+  color: white;
+}
+.document-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.document-table th,
+.document-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align:center;
+}
+
+.document-table th {
+  background-color: #f4f4f4;
+}
+
+.date-picker-header {
+  padding: 5px;
+  font-size: 14px;
+  width: 30px;
+  height: 30px;
+  border: none;
+}
+
+.calendar-icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 20px;
+  color: #666;
+  margin-left: 10px;
+}
+
+.calendar-icon-btn:hover {
+  color: #333;
+}
+
+.download-btn {
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+}
+
+.download-btn:hover {
+  background: rgb(77, 73, 73);
+  color: white;
+}
+
+.dropdown-arrow {
+  width: 24px;
+  height:24px;
+  margin-top: 1px;
+  margin-left: -4px;
+}
+
+.dropdown-arrow:hover {
+  filter:invert(5);
+}
+.doc-type-filter {
+  margin-bottom: 20px;
+  margin-left: 25%;
+}
+
+.doc-type-filter select {
+  padding: 5px;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.doc-type-dropdown {
+  font-size: 14px;
+  margin-left: 10px;
+  padding: 5px;
+  width: 160px;
+}
+
+.global-date-filter {
+  margin-left: 25%;
+}
+
+.datefilter {
+  padding:5px;
+}
+
+
+
+.react-datepicker {
+  z-index: 9999; /* Ensure the date picker appears above other elements */
+}
