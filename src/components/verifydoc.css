@@ -54,6 +54,33 @@ h2 {
   margin-right: 60px;
 }
 
+.suggestion-box {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 180px;
+  border-radius:5px ;
+  list-style-type: none;
+  width: 150px;
+  height:100px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: #f7f5f5;
+  cursor: pointer;
+}
+
+.suggestion-item {
+  margin-top: 15px;
+  padding: 5px;
+  border-radius:6px ;
+  
+}
+
+.suggestion-item:hover {
+  background:#535353;
+  color: whitesmoke;
+  width: 120px;
+
+
+}
 .calendarbtn {
   margin-left: 15px;
   cursor: pointer;
@@ -92,12 +119,12 @@ h2 {
 .show-doc-type-btn {
   cursor: pointer;
   border: none;
-  margin-left: 10px;
+  margin-left: 1px;
   margin-top: -3px;
-  background: #f4f4f4;
+  background:none;
   border-radius: 4px;
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
   position:absolute;
 }
 
@@ -108,8 +135,8 @@ h2 {
 .calendarbtn {
   cursor: pointer;
   border: none;
-  background: #f4f4f4;
-  margin-left: 15px;
+  background:none;
+  margin-left: 5px;
   border-radius: 4px;
   padding: 4px;
 }
@@ -182,7 +209,10 @@ h2 {
   border-collapse: collapse;
 }
 
-.document-table th,
+.document-table th {
+  color: white;
+  padding: 10px;
+}
 .document-table td {
   padding: 10px;
   border: 1px solid #ddd;
@@ -190,7 +220,7 @@ h2 {
 }
 
 .document-table th {
-  background-color: #f4f4f4;
+  background-color: #156082;
 }
 
 .date-picker-header {
@@ -215,24 +245,27 @@ h2 {
   color: #333;
 }
 
-.download-btn {
-  margin-left: 10px;
+.reset-btn {
   cursor: pointer;
-  background-color: transparent;
   border: none;
-  font-size: 16px;
+  background:none;
+  border-radius: 4px;
+  margin-left: 4px;
+  width: 15%;
+  height: 15%;
+  padding: 5px;
 }
 
-.download-btn:hover {
-  background: rgb(77, 73, 73);
+.reset-btn:hover {
+  background: #706b6b;
   color: white;
 }
 
 .dropdown-arrow {
   width: 24px;
   height:24px;
-  margin-top: 1px;
-  margin-left: -4px;
+  margin-top: -1px;
+  margin-left: -6px;
 }
 
 .dropdown-arrow:hover {
@@ -263,8 +296,6 @@ h2 {
 .datefilter {
   padding:5px;
 }
-
-
 
 .react-datepicker {
   z-index: 9999; /* Ensure the date picker appears above other elements */
