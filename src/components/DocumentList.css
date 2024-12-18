@@ -1,0 +1,135 @@
+/* DocumentList.css */
+
+/* Basic container styles */
+.document-list-container {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 900px;
+    margin: 30px auto;
+    
+  }
+  
+  /* Title Styles */
+  .title {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Declaration Section Styles */
+  .declaration-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  
+  .declaration-label {
+    font-size: 1.1em;
+    margin-right: 10px;
+    color: #555;
+  }
+  
+  .declaration-input {
+    padding: 8px;
+    /* font-size: 1em; */
+    border-radius: 5px;
+    border: 1px solid #444;
+    margin-right: 10px;
+    width: 200px;
+    max-width: 100%;
+  }
+  
+  .arrow-icon {
+    font-size: 1em;
+    padding-left: 8px;
+    padding-bottom: 0px;
+    padding-top: 4px;
+    background-color: #5fc3d7;
+  }
+  
+  /* Table Styles */
+  .document-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .document-table th, .document-table td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .document-table th {
+    background-color: #156082;
+    color: white;
+  }
+  
+  .document-table td {
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .document-table tr:nth-child(even) {
+    background-color: #e9f7e9;
+  }
+  
+  .calendar-icon{
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+ 
+
+
+
+
+
+
+
+
+
+
+  /* Style for the dropdown icon */
+.dropdown-icon {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+  }
+  
+  /* Dropdown container styles */
+  .dropdown-list {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    margin-top: 12px;
+  }
+  
+  /* Style for each item in the dropdown */
+  .dropdown-item {
+    padding: 8px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Adjustments for dropdown position */
+  .document-table th {
+    position: relative;
+  }
+  
+  .document-list-container {
+    position: relative;
+  }
+  
